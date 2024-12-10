@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymFit - Stay Fit</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="#">🏋️ Gym<span>Fit</span></a>
+    </div>
+
+
+    <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="my_tooggle()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+
+   <!-- Hero or home Section -->
+<header id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+        <h1>Welcome to <span>GymFit</span></h1>
+        <p>Your fitness journey starts here. Join us and transform your life today!</p>
+       <div class="buttons">
+    <a href="#membership" class="btn primary">
+        <i class="btn1"></i> Join Now
+    </a>
+    <a href="#about" class="btn secondary">
+        <i class="btn2"></i> Learn More
+    </a>
+    </div>
+
+    </div>
+</header>
+
+<!-- about section -->
+
+<section id="about" class="about">
+    <div class="container">
+        <div class="text">
+            <h2>About <span>GymFit</span></h2>
+            <p>At GymFit, we believe in empowering individuals to lead healthier, more active lifestyles. Our state-of-the-art facilities, expert trainers, and supportive community are here to help you achieve your fitness goals, whether you're a beginner or a seasoned athlete.</p>
+            <ul class="highlights">
+                <li><i class="highlight 1"></i> Modern Equipment</li>
+                <li><i class="highlight 2"></i> Certified Trainers</li>
+                <li><i class="highlight 3"></i> Personalized Programs</li>
+            </ul>
+            <a href="#services" class="btn primary">Learn More</a>
+        </div>
+        <div class="image">
+            <img src="360_F_429356296_CVQ5LkC6Pl55kUNLqLisVKgTw9vjyif1.jpg" alt="Modern Gym Equipment">
+        </div>
+    </div>
+</section>
+
+    <!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <h2>Our <span>Services</span></h2>
+        <p class="section-description">Discover a variety of services designed to help you achieve your fitness goals.</p>
+        <div class="service-list">
+
+            <div class="service-item">
+                <img src="360_F_333919715_R1mDUWPgwB2CRvSCNnvnmtn64gPY40ZL.jpg" alt="Modern Gym Equipment" width="200px" height="200px">
+                <h3>Personal Training</h3>
+                <p>One-on-one coaching sessions, Customized workout programs and Performance tracking.</p>
+                <button class="btn4" onclick="showMessage()">Register Now</button>
+            </div>
+
+            <div class="service-item">
+               <img src="crop-slender-man-meditating-lotus-260nw-2445315707.webp" alt="Modern Gym Equipment" width="200px" height="200px">
+                <h3>Group Classes</h3>
+                <p>Zumba, Yoga, Pilates and Kickboxing, CrossFit.</p>
+                <button class="btn4" onclick="showMessage()">Register Now</button>
+            </div>
+
+            <div class="service-item">
+                <img src="Top-3-Questions-to-Ask-Your-Dietician-During-the-First-Visit-2.jpg" alt="Modern Gym Equipment" width="200px" height="200px">
+                <h3>Nutrition Guidance</h3>
+                <p>Customized Meal Plans, Supplement Guidance and Weight Management Programs .</p>
+                <button class="btn4" onclick="showMessage()">Register Now</button>
+            </div>
+             
+            <div class="service-item">
+                <img src="pngtree-an-empty-gym-with-some-machines-image_2949921.jpg" alt="Modern Gym Equipment" width="200px" height="200px">
+                <h3>Workout Area (Gym Floor)</h3>
+                <p>Cardio equipment (e.g., treadmills, bikes) and Strength machines and Free weights (dumbbells, barbells).</p>
+                <button class="btn4"  onclick="showMessage()">Register Now</button>
+            </div>
+
+            <div class="service-item">
+                <img src="istockphoto-639376842-612x612.jpg" alt="Modern Gym Equipment" width="200px" height="200px">
+                <h3>Kids and Family Area</h3>
+                <p>Designated kids' zones and Fitness activities for children.</p>
+                <button class="btn4"  onclick="showMessage()">Register Now</button>
+                
+            </div>
+
+            <div class="service-item">
+                <img src="fitness-gym-boxing-workout.jpg" alt="Modern Gym Equipment" width="200px" height="200px">
+                <h3>Sports Training</h3>
+                <p>Boxing, Martial arts and CrossFit. </p>
+                <button class="btn4"  onclick="showMessage()">Register Now</button>
+                
+            </div>
+            
+            <div class="service-item">
+                <img src="3742321079.jpg" alt="Modern Gym Equipment" width="200px" height="200px">
+                <h3> Outdoor Training Programs</h3>
+                <p>Outdoor workout sessions, Group running or yoga in the park and Adventure fitness activities like mountain climbing .</p>
+                <button class="btn4"  onclick="showMessage()">Register Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact <span>Us</span></h2>
+        <p class="section-description">We'd love to hear from you! Feel free to reach out with any questions or feedback.</p>
+        <div class="contact-content">
+            <!-- Contact Form -->
+            <form id="contactForm" class="contact-form" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Enter Your Name">
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Enter Your Email">
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" placeholder="Enter Your Message"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+
+            </form>
+            
+            <div class="contact-info">
+                <div class="info-item">
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+123 456 789</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div>
+                        <h4>Address</h4>
+                        <p>123 said street , Tanta City</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div>
+                        <h4>Email</h4>
+                        <p>GymFit@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+          
+        </div>
+    </div>
+</section>
+<!-- Footer Section -->
+<footer class="simple-footer">
+    <p>&copy; 2024 GymFit. All rights reserved. | Designed by Ahmed Badr </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
